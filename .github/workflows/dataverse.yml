@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  release:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repo to Dataverse
+        uses: riboehm/dataverse/githubTest
+        with:
+           DATAVERSE_TOKEN: ${{secrets.919eaca0-e207-4277-ab8d-44ab292defad}}
+           DATAVERSE_SERVER: https://dataverse.tdl.org/dataverse/uh
+           DATAVERSE_DATASET_DOI: doi:10.18738/T8/MGUGMM
+           DELETE: False
+           PUBLISH: False
