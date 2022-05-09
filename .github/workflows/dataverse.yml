@@ -1,4 +1,5 @@
 # This is a basic workflow to help you get started with Actions
+name: CI
 on:
   release:
   workflow_dispatch:
@@ -11,7 +12,7 @@ jobs:
         uses: riboehm/dataverse/demo
         with:
            DATAVERSE_TOKEN: ${{secrets.96dac759-d7a8-47a2-a572-bf615e8d9c68}}
-           DATAVERSE_SERVER: https://dataverse.tdl.org/dataverse/uh
+           DATAVERSE_SERVER: https://demo.dataverse.org/dataverse/demo
            DATAVERSE_DATASET_DOI: doi:10.70122/FK2/HP4IRI
            DELETE: False
            PUBLISH: False
