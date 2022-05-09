@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send repo to Dataverse
-        uses: riboehm/dataverse/githubTest
+        uses: riboehm/dataverse/demo
         with:
-           DATAVERSE_TOKEN: ${{secrets.919eaca0-e207-4277-ab8d-44ab292defad}}
+           DATAVERSE_TOKEN: ${{secrets.96dac759-d7a8-47a2-a572-bf615e8d9c68}}
            DATAVERSE_SERVER: https://dataverse.tdl.org/dataverse/uh
-           DATAVERSE_DATASET_DOI: doi:10.18738/T8/MGUGMM
+           DATAVERSE_DATASET_DOI: doi:10.70122/FK2/HP4IRI
            DELETE: False
            PUBLISH: False
            
